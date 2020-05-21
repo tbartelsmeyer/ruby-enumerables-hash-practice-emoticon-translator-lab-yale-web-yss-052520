@@ -15,7 +15,6 @@ end
 def get_japanese_emoticon(infile,emoticon)
   hash = load_library(infile)
   hash.each { | name, val |
-    #binding.pry
     if val[:english] == emoticon
       return val[:japanese]
     end
